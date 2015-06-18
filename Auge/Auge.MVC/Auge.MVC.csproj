@@ -1,0 +1,1099 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0114B7E6-8DD4-462F-8D14-0D64E161033D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Auge.MVC</RootNamespace>
+    <AssemblyName>Auge.MVC</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.4.0\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.Mvc">
+      <HintPath>..\packages\Autofac.Mvc5.3.3.4\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Net4">
+      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.Net4.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=__MvcPagesVersion__, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=__MvcPagesVersion__, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.2\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=__MvcPagesVersion__, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.2\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=__MvcPagesVersion__, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.2\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.2\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\Administrativo\Views\Shared\" />
+    <Folder Include="Views\Default\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IoCConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Administrativo\AdministrativoAreaRegistration.cs" />
+    <Compile Include="Areas\Administrativo\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Administrativo\Controllers\LojaController.cs" />
+    <Compile Include="Areas\Administrativo\Models\EnderecoVM.cs" />
+    <Compile Include="Areas\Administrativo\Models\LojaVM.cs" />
+    <Compile Include="Areas\Administrativo\Models\PessoaLojaResponsavelVM.cs" />
+    <Compile Include="Areas\Administrativo\Models\TelefoneVM.cs" />
+    <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
+    <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
+    <Compile Include="Areas\HelpPage\Controllers\HelpController.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageAreaRegistration.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageConfigurationExtensions.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\CollectionModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\DictionaryModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumValueDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\IModelDocumentationProvider.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\KeyValuePairModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameAttribute.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterAnnotation.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\Models\HelpPageApiModel.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ImageSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\InvalidSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ObjectGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
+    <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Areas\Seguranca\Controllers\LoginController.cs" />
+    <Compile Include="Areas\Seguranca\SegurancaAreaRegistration.cs" />
+    <Compile Include="Areas\Seguranca\Models\LoginVM.cs" />
+    <Compile Include="Controllers\ConferenteController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MedidorController.cs" />
+    <Compile Include="Controllers\PessoasController.cs" />
+    <Compile Include="Controllers\ProjetoController.cs" />
+    <Compile Include="Controllers\TelefonesController.cs" />
+    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HtmlHelpers.cs" />
+    <Compile Include="Mappers\AutoMapperConfig.cs" />
+    <Compile Include="Mappers\DomainToViewModelMappingProfile.cs" />
+    <Compile Include="Mappers\ViewModelToDomainMappingProfile.cs" />
+    <Compile Include="Models\AmbienteVM.cs" />
+    <Compile Include="Models\AnexarPorAmbienteVM.cs" />
+    <Compile Include="Models\AnexoVM.cs" />
+    <Compile Include="Models\CadastroProjetoVM.cs" />
+    <Compile Include="Models\ClienteVM.cs" />
+    <Compile Include="Models\LojaVM.cs" />
+    <Compile Include="Models\PerguntaVM.cs" />
+    <Compile Include="Models\PesquisaConferenteVM.cs" />
+    <Compile Include="Models\PesquisaProjetoVM.cs" />
+    <Compile Include="Models\ProjetoVM.cs" />
+    <Compile Include="Models\RequisicaoDeMedidasVM.cs" />
+    <Compile Include="Models\RespostaPerguntaVM.cs" />
+    <Compile Include="Models\SituacaoVM.cs" />
+    <Compile Include="Models\TelefoneVM.cs" />
+    <Compile Include="Models\UsuarioVM.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Scripts\calendario.js" />
+    <Content Include="Scripts\common.js" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\.bowerrc" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\.gitignore" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\bower.json" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\components\bootstrap3\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\components\bootstrap3\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\components\bootstrap3\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\composer.json" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\CONTRIBUTING.md" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\events.json.php" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\less\calendar.less" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\less\day.less" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\less\events.less" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\less\grid.less" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\less\month.less" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\less\theme.less" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\less\variables.less" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\less\week.less" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\LICENSE" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\package.json" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\README.md" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\web.config" />
+    <Content Include="Areas\Administrativo\Views\web.config" />
+    <Content Include="Areas\Administrativo\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Administrativo\Views\Loja\Novo.cshtml" />
+    <Content Include="Areas\Administrativo\Views\Loja\Index.cshtml" />
+    <Content Include="Areas\Administrativo\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Administrativo\Views\Loja\EditorTemplates\Telefone.cshtml" />
+    <Content Include="Areas\Administrativo\Views\Loja\CadastroGerente.cshtml" />
+    <Content Include="Areas\Administrativo\Views\Loja\EditorTemplates\PessoaLojaResponsaveis.cshtml" />
+    <Content Include="Areas\Administrativo\Views\Loja\EditorTemplates\ResponsavelLoja.cshtml" />
+    <Content Include="Areas\Administrativo\Views\Loja\EditorTemplates\Endereco.cshtml" />
+    <None Include="Properties\PublishProfiles\Locaweb.pubxml" />
+    <None Include="ThirdParty\jquery\dist\jquery-1.11.2.intellisense.js" />
+    <Content Include="Content\Site.css" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\components\bootstrap2\css\bootstrap-responsive.css" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\components\bootstrap2\css\bootstrap.css" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\components\bootstrap2\img\glyphicons-halflings-white.png" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\components\bootstrap2\img\glyphicons-halflings.png" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\components\bootstrap2\js\bootstrap.min.js" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\components\bootstrap3\css\bootstrap-theme.css" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\components\bootstrap3\css\bootstrap-theme.min.css" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\components\bootstrap3\css\bootstrap.css" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\components\bootstrap3\css\bootstrap.min.css" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\components\bootstrap3\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\components\bootstrap3\js\bootstrap.js" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\components\bootstrap3\js\bootstrap.min.js" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\components\jquery\jquery.min.js" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\components\jstimezonedetect\jstz.js" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\components\jstimezonedetect\jstz.min.js" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\components\jstimezonedetect\LICENCE.txt" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\components\underscore\underscore-min.js" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\css\calendar.css" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\css\calendar.min.css" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\Gruntfile.js" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\img\dark_wood.png" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\img\slide-bg.png" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\img\tick.png" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\index-bs3.html" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\index.html" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\js\app.js" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\js\calendar.js" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\js\calendar.min.js" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\js\language\pt-BR.js" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\js\language\template.js" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\tmpls\day.html" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\tmpls\events-list.html" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\tmpls\modal.html" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\tmpls\month-day.html" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\tmpls\month.html" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\tmpls\week-days.html" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\tmpls\week.html" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\tmpls\year-month.html" />
+    <Content Include="ThirdParty\bootstrap-calendar-master\tmpls\year.html" />
+    <Content Include="ThirdParty\jquery\dist\jquery-1.11.2.js" />
+    <Content Include="ThirdParty\jquery\dist\jquery-1.11.2.min.js" />
+    <Content Include="ThirdParty\jquery\dist\jquery-1.11.2.min.map" />
+    <None Include="ThirdParty\jquery.validate\jquery.validate-vsdoc.js" />
+    <Content Include="ThirdParty\jquery.validate\jquery.validate.js" />
+    <Content Include="ThirdParty\jquery.validate\jquery.validate.min.js" />
+    <Content Include="ThirdParty\jquery.validate\jquery.validate.unobtrusive.js" />
+    <Content Include="ThirdParty\jquery.validate\jquery.validate.unobtrusive.min.js" />
+    <Content Include="ThirdParty\sb-admin\css\sb-admin-2.css" />
+    <Content Include="ThirdParty\sb-admin\css\timeline.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Areas\HelpPage\Views\Web.config" />
+    <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="ThirdParty\sb-admin\js\sb-admin-2.js" />
+    <Content Include="ThirdParty\bootstrap-social\bootstrap-social.css" />
+    <Content Include="ThirdParty\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="ThirdParty\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="ThirdParty\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="ThirdParty\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="ThirdParty\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="ThirdParty\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="ThirdParty\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="ThirdParty\bootstrap\dist\js\npm.js" />
+    <Content Include="ThirdParty\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="ThirdParty\bootstrap\Gruntfile.js" />
+    <Content Include="ThirdParty\bootstrap\grunt\bs-commonjs-generator.js" />
+    <Content Include="ThirdParty\bootstrap\grunt\bs-glyphicons-data-generator.js" />
+    <Content Include="ThirdParty\bootstrap\grunt\bs-lessdoc-parser.js" />
+    <Content Include="ThirdParty\bootstrap\grunt\bs-raw-files-generator.js" />
+    <Content Include="ThirdParty\bootstrap\js\affix.js" />
+    <Content Include="ThirdParty\bootstrap\js\alert.js" />
+    <Content Include="ThirdParty\bootstrap\js\button.js" />
+    <Content Include="ThirdParty\bootstrap\js\carousel.js" />
+    <Content Include="ThirdParty\bootstrap\js\collapse.js" />
+    <Content Include="ThirdParty\bootstrap\js\dropdown.js" />
+    <Content Include="ThirdParty\bootstrap\js\modal.js" />
+    <Content Include="ThirdParty\bootstrap\js\popover.js" />
+    <Content Include="ThirdParty\bootstrap\js\scrollspy.js" />
+    <Content Include="ThirdParty\bootstrap\js\tab.js" />
+    <Content Include="ThirdParty\bootstrap\js\tooltip.js" />
+    <Content Include="ThirdParty\bootstrap\js\transition.js" />
+    <Content Include="ThirdParty\bootstrap\package.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\average%28%29.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\column%28%29.title%28%29.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\columns%28%29.order%28%29.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnAddDataAndDisplay.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnAddTr.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnColumnIndexToVisible.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnDataUpdate.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnDisplayRow.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnDisplayStart.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnFakeRowspan.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnFilterAll.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnFilterClear.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnFilterOnReturn.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnFindCellRowIndexes.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnFindCellRowNodes.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnGetAdjacentTr.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnGetColumnData.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnGetColumnIndex.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnGetHiddenNodes.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnGetTd.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnGetTds.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnLengthChange.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnMultiFilter.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnPagingInfo.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnProcessingIndicator.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnReloadAjax.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnSetFilteringDelay.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnSortNeutral.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnStandingRedraw.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\fnVisibleToColumnIndex.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\index.html" />
+    <Content Include="ThirdParty\datatables-plugins\api\page.jumpToData%28%29.js" />
+    <Content Include="ThirdParty\datatables-plugins\api\sum%28%29.js" />
+    <Content Include="ThirdParty\datatables-plugins\features\alphabetSearch\dataTables.alphabetSearch.css" />
+    <Content Include="ThirdParty\datatables-plugins\features\alphabetSearch\dataTables.alphabetSearch.js" />
+    <Content Include="ThirdParty\datatables-plugins\features\alphabetSearch\dataTables.alphabetSearch.min.js" />
+    <Content Include="ThirdParty\datatables-plugins\features\lengthLinks\dataTables.lengthLinks.css" />
+    <Content Include="ThirdParty\datatables-plugins\features\lengthLinks\dataTables.lengthLinks.js" />
+    <Content Include="ThirdParty\datatables-plugins\features\lengthLinks\dataTables.lengthLinks.min.js" />
+    <Content Include="ThirdParty\datatables-plugins\features\searchHighlight\dataTables.searchHighlight.css" />
+    <Content Include="ThirdParty\datatables-plugins\features\searchHighlight\dataTables.searchHighlight.js" />
+    <Content Include="ThirdParty\datatables-plugins\features\searchHighlight\dataTables.searchHighlight.min.js" />
+    <Content Include="ThirdParty\datatables-plugins\filtering\index.html" />
+    <Content Include="ThirdParty\datatables-plugins\filtering\row-based\range_dates.js" />
+    <Content Include="ThirdParty\datatables-plugins\filtering\row-based\range_numbers.js" />
+    <Content Include="ThirdParty\datatables-plugins\filtering\row-based\TableTools.ShowSelectedOnly.js" />
+    <Content Include="ThirdParty\datatables-plugins\filtering\type-based\accent-neutralise.js" />
+    <Content Include="ThirdParty\datatables-plugins\filtering\type-based\html.js" />
+    <Content Include="ThirdParty\datatables-plugins\filtering\type-based\phoneNumber.js" />
+    <Content Include="ThirdParty\datatables-plugins\integration\bootstrap\1\dataTables.bootstrap.css" />
+    <Content Include="ThirdParty\datatables-plugins\integration\bootstrap\1\dataTables.bootstrap.js" />
+    <Content Include="ThirdParty\datatables-plugins\integration\bootstrap\2\dataTables.bootstrap.css" />
+    <Content Include="ThirdParty\datatables-plugins\integration\bootstrap\2\dataTables.bootstrap.js" />
+    <Content Include="ThirdParty\datatables-plugins\integration\bootstrap\2\dataTables.bootstrap.min.js" />
+    <Content Include="ThirdParty\datatables-plugins\integration\bootstrap\2\index.html" />
+    <Content Include="ThirdParty\datatables-plugins\integration\bootstrap\3\dataTables.bootstrap.css" />
+    <Content Include="ThirdParty\datatables-plugins\integration\bootstrap\3\dataTables.bootstrap.js" />
+    <Content Include="ThirdParty\datatables-plugins\integration\bootstrap\3\dataTables.bootstrap.min.js" />
+    <Content Include="ThirdParty\datatables-plugins\integration\bootstrap\3\index.html" />
+    <Content Include="ThirdParty\datatables-plugins\integration\bootstrap\images\sort_asc.png" />
+    <Content Include="ThirdParty\datatables-plugins\integration\bootstrap\images\sort_asc_disabled.png" />
+    <Content Include="ThirdParty\datatables-plugins\integration\bootstrap\images\sort_both.png" />
+    <Content Include="ThirdParty\datatables-plugins\integration\bootstrap\images\sort_desc.png" />
+    <Content Include="ThirdParty\datatables-plugins\integration\bootstrap\images\sort_desc_disabled.png" />
+    <Content Include="ThirdParty\datatables-plugins\integration\font-awesome\bootstrap.html" />
+    <Content Include="ThirdParty\datatables-plugins\integration\font-awesome\dataTables.fontAwesome.css" />
+    <Content Include="ThirdParty\datatables-plugins\integration\font-awesome\datatables.html" />
+    <Content Include="ThirdParty\datatables-plugins\integration\font-awesome\foundation.html" />
+    <Content Include="ThirdParty\datatables-plugins\integration\foundation\dataTables.foundation.css" />
+    <Content Include="ThirdParty\datatables-plugins\integration\foundation\dataTables.foundation.js" />
+    <Content Include="ThirdParty\datatables-plugins\integration\foundation\dataTables.foundation.min.js" />
+    <Content Include="ThirdParty\datatables-plugins\integration\foundation\images\sort_asc.png" />
+    <Content Include="ThirdParty\datatables-plugins\integration\foundation\images\sort_asc_disabled.png" />
+    <Content Include="ThirdParty\datatables-plugins\integration\foundation\images\sort_both.png" />
+    <Content Include="ThirdParty\datatables-plugins\integration\foundation\images\sort_desc.png" />
+    <Content Include="ThirdParty\datatables-plugins\integration\foundation\images\sort_desc_disabled.png" />
+    <Content Include="ThirdParty\datatables-plugins\integration\foundation\index.html" />
+    <Content Include="ThirdParty\datatables-plugins\integration\jqueryui\dataTables.jqueryui.css" />
+    <Content Include="ThirdParty\datatables-plugins\integration\jqueryui\dataTables.jqueryui.js" />
+    <Content Include="ThirdParty\datatables-plugins\integration\jqueryui\dataTables.jqueryui.min.js" />
+    <Content Include="ThirdParty\datatables-plugins\integration\jqueryui\index.html" />
+    <Content Include="ThirdParty\datatables-plugins\pagination\ellipses.js" />
+    <Content Include="ThirdParty\datatables-plugins\pagination\extjs.js" />
+    <Content Include="ThirdParty\datatables-plugins\pagination\four_button.js" />
+    <Content Include="ThirdParty\datatables-plugins\pagination\index.html" />
+    <Content Include="ThirdParty\datatables-plugins\pagination\input.js" />
+    <Content Include="ThirdParty\datatables-plugins\pagination\jPaginator\dataTables.jPaginator.js" />
+    <Content Include="ThirdParty\datatables-plugins\pagination\scrolling.js" />
+    <Content Include="ThirdParty\datatables-plugins\pagination\select.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\alt-string.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\anti-the.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\chinese-string.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\currency.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\custom-data-source\dom-checkbox.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\custom-data-source\dom-select.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\custom-data-source\dom-text.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\date-dd-MMM-yyyy.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\date-de.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\date-eu.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\date-euro.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\date-uk.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\datetime-moment.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\datetime-us.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\enum.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\file-size.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\formatted-numbers.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\index.html" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\ip-address.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\monthYear.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\natural.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\num-html.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\numeric-comma.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\percent.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\persian.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\scientific.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\signed-num.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\stringMonthYear.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\time.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\title-numeric.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\title-string.js" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\turkish-string.js" />
+    <Content Include="ThirdParty\datatables-plugins\type-detection\currency.js" />
+    <Content Include="ThirdParty\datatables-plugins\type-detection\date-uk.js" />
+    <Content Include="ThirdParty\datatables-plugins\type-detection\file-size.js" />
+    <Content Include="ThirdParty\datatables-plugins\type-detection\formatted-num.js" />
+    <Content Include="ThirdParty\datatables-plugins\type-detection\index.html" />
+    <Content Include="ThirdParty\datatables-plugins\type-detection\ip-address.js" />
+    <Content Include="ThirdParty\datatables-plugins\type-detection\num-html.js" />
+    <Content Include="ThirdParty\datatables-plugins\type-detection\numeric-comma.js" />
+    <Content Include="ThirdParty\datatables-responsive\css\dataTables.responsive.css" />
+    <Content Include="ThirdParty\datatables-responsive\docs\api\responsive.index%28%29.xml" />
+    <Content Include="ThirdParty\datatables-responsive\docs\api\responsive.rebuild%28%29.xml" />
+    <Content Include="ThirdParty\datatables-responsive\docs\api\responsive.recalc%28%29.xml" />
+    <Content Include="ThirdParty\datatables-responsive\docs\option\responsive.breakpoints.xml" />
+    <Content Include="ThirdParty\datatables-responsive\docs\option\responsive.details.renderer.xml" />
+    <Content Include="ThirdParty\datatables-responsive\docs\option\responsive.details.target.xml" />
+    <Content Include="ThirdParty\datatables-responsive\docs\option\responsive.details.type.xml" />
+    <Content Include="ThirdParty\datatables-responsive\docs\option\responsive.details.xml" />
+    <Content Include="ThirdParty\datatables-responsive\docs\option\responsive.xml" />
+    <Content Include="ThirdParty\datatables-responsive\examples\child-rows\column-control.xml" />
+    <Content Include="ThirdParty\datatables-responsive\examples\child-rows\custom-renderer.xml" />
+    <Content Include="ThirdParty\datatables-responsive\examples\child-rows\disable-child-rows.xml" />
+    <Content Include="ThirdParty\datatables-responsive\examples\child-rows\index.xml" />
+    <Content Include="ThirdParty\datatables-responsive\examples\child-rows\right-column.xml" />
+    <Content Include="ThirdParty\datatables-responsive\examples\child-rows\whole-row-control.xml" />
+    <Content Include="ThirdParty\datatables-responsive\examples\display-control\auto.xml" />
+    <Content Include="ThirdParty\datatables-responsive\examples\display-control\classes.xml" />
+    <Content Include="ThirdParty\datatables-responsive\examples\display-control\fixedHeader.xml" />
+    <Content Include="ThirdParty\datatables-responsive\examples\display-control\index.xml" />
+    <Content Include="ThirdParty\datatables-responsive\examples\display-control\init-classes.xml" />
+    <Content Include="ThirdParty\datatables-responsive\examples\index.xml" />
+    <Content Include="ThirdParty\datatables-responsive\examples\initialisation\ajax.xml" />
+    <Content Include="ThirdParty\datatables-responsive\examples\initialisation\className.xml" />
+    <Content Include="ThirdParty\datatables-responsive\examples\initialisation\default.xml" />
+    <Content Include="ThirdParty\datatables-responsive\examples\initialisation\index.xml" />
+    <Content Include="ThirdParty\datatables-responsive\examples\initialisation\new.xml" />
+    <Content Include="ThirdParty\datatables-responsive\examples\initialisation\option.xml" />
+    <Content Include="ThirdParty\datatables-responsive\examples\styling\bootstrap.xml" />
+    <Content Include="ThirdParty\datatables-responsive\examples\styling\compact.xml" />
+    <Content Include="ThirdParty\datatables-responsive\examples\styling\foundation.xml" />
+    <Content Include="ThirdParty\datatables-responsive\examples\styling\index.xml" />
+    <Content Include="ThirdParty\datatables-responsive\examples\styling\scrolling.xml" />
+    <Content Include="ThirdParty\datatables-responsive\js\dataTables.responsive.js" />
+    <Content Include="ThirdParty\datatables-responsive\License.txt" />
+    <Content Include="ThirdParty\datatables\license.txt" />
+    <Content Include="ThirdParty\datatables\media\css\jquery.dataTables.css" />
+    <Content Include="ThirdParty\datatables\media\css\jquery.dataTables.min.css" />
+    <Content Include="ThirdParty\datatables\media\css\jquery.dataTables_themeroller.css" />
+    <Content Include="ThirdParty\datatables\media\images\favicon.ico" />
+    <Content Include="ThirdParty\datatables\media\images\sort_asc.png" />
+    <Content Include="ThirdParty\datatables\media\images\sort_asc_disabled.png" />
+    <Content Include="ThirdParty\datatables\media\images\sort_both.png" />
+    <Content Include="ThirdParty\datatables\media\images\sort_desc.png" />
+    <Content Include="ThirdParty\datatables\media\images\sort_desc_disabled.png" />
+    <Content Include="ThirdParty\datatables\media\js\jquery.dataTables.js" />
+    <Content Include="ThirdParty\datatables\media\js\jquery.dataTables.min.js" />
+    <Content Include="ThirdParty\datatables\media\js\jquery.js" />
+    <Content Include="ThirdParty\flot.tooltip\js\excanvas.min.js" />
+    <Content Include="ThirdParty\flot.tooltip\js\jquery.flot.js" />
+    <Content Include="ThirdParty\flot.tooltip\js\jquery.flot.tooltip.js" />
+    <Content Include="ThirdParty\flot.tooltip\js\jquery.flot.tooltip.min.js" />
+    <Content Include="ThirdParty\flot.tooltip\js\jquery.flot.tooltip.source.js" />
+    <Content Include="ThirdParty\flot\examples\ajax\index.html" />
+    <Content Include="ThirdParty\flot\examples\annotating\index.html" />
+    <Content Include="ThirdParty\flot\examples\axes-interacting\index.html" />
+    <Content Include="ThirdParty\flot\examples\axes-multiple\index.html" />
+    <Content Include="ThirdParty\flot\examples\axes-time-zones\date.js" />
+    <Content Include="ThirdParty\flot\examples\axes-time-zones\index.html" />
+    <Content Include="ThirdParty\flot\examples\axes-time\index.html" />
+    <Content Include="ThirdParty\flot\examples\background.png" />
+    <Content Include="ThirdParty\flot\examples\basic-options\index.html" />
+    <Content Include="ThirdParty\flot\examples\basic-usage\index.html" />
+    <Content Include="ThirdParty\flot\examples\canvas\index.html" />
+    <Content Include="ThirdParty\flot\examples\categories\index.html" />
+    <Content Include="ThirdParty\flot\examples\examples.css" />
+    <Content Include="ThirdParty\flot\examples\image\hs-2004-27-a-large-web.jpg" />
+    <Content Include="ThirdParty\flot\examples\image\index.html" />
+    <Content Include="ThirdParty\flot\examples\index.html" />
+    <Content Include="ThirdParty\flot\examples\interacting\index.html" />
+    <Content Include="ThirdParty\flot\examples\navigate\arrow-down.gif" />
+    <Content Include="ThirdParty\flot\examples\navigate\arrow-left.gif" />
+    <Content Include="ThirdParty\flot\examples\navigate\arrow-right.gif" />
+    <Content Include="ThirdParty\flot\examples\navigate\arrow-up.gif" />
+    <Content Include="ThirdParty\flot\examples\navigate\index.html" />
+    <Content Include="ThirdParty\flot\examples\percentiles\index.html" />
+    <Content Include="ThirdParty\flot\examples\realtime\index.html" />
+    <Content Include="ThirdParty\flot\examples\resize\index.html" />
+    <Content Include="ThirdParty\flot\examples\selection\index.html" />
+    <Content Include="ThirdParty\flot\examples\series-errorbars\index.html" />
+    <Content Include="ThirdParty\flot\examples\series-pie\index.html" />
+    <Content Include="ThirdParty\flot\examples\series-toggle\index.html" />
+    <Content Include="ThirdParty\flot\examples\series-types\index.html" />
+    <Content Include="ThirdParty\flot\examples\shared\jquery-ui\jquery-ui.min.css" />
+    <Content Include="ThirdParty\flot\examples\stacking\index.html" />
+    <Content Include="ThirdParty\flot\examples\symbols\index.html" />
+    <Content Include="ThirdParty\flot\examples\threshold\index.html" />
+    <Content Include="ThirdParty\flot\examples\tracking\index.html" />
+    <Content Include="ThirdParty\flot\examples\visitors\index.html" />
+    <Content Include="ThirdParty\flot\examples\zooming\index.html" />
+    <Content Include="ThirdParty\flot\excanvas.js" />
+    <Content Include="ThirdParty\flot\excanvas.min.js" />
+    <Content Include="ThirdParty\flot\jquery.colorhelpers.js" />
+    <Content Include="ThirdParty\flot\jquery.flot.canvas.js" />
+    <Content Include="ThirdParty\flot\jquery.flot.categories.js" />
+    <Content Include="ThirdParty\flot\jquery.flot.crosshair.js" />
+    <Content Include="ThirdParty\flot\jquery.flot.errorbars.js" />
+    <Content Include="ThirdParty\flot\jquery.flot.fillbetween.js" />
+    <Content Include="ThirdParty\flot\jquery.flot.image.js" />
+    <Content Include="ThirdParty\flot\jquery.flot.js" />
+    <Content Include="ThirdParty\flot\jquery.flot.navigate.js" />
+    <Content Include="ThirdParty\flot\jquery.flot.pie.js" />
+    <Content Include="ThirdParty\flot\jquery.flot.resize.js" />
+    <Content Include="ThirdParty\flot\jquery.flot.selection.js" />
+    <Content Include="ThirdParty\flot\jquery.flot.stack.js" />
+    <Content Include="ThirdParty\flot\jquery.flot.symbol.js" />
+    <Content Include="ThirdParty\flot\jquery.flot.threshold.js" />
+    <Content Include="ThirdParty\flot\jquery.flot.time.js" />
+    <Content Include="ThirdParty\flot\jquery.js" />
+    <Content Include="ThirdParty\flot\LICENSE.txt" />
+    <Content Include="ThirdParty\font-awesome\css\font-awesome.css" />
+    <Content Include="ThirdParty\font-awesome\css\font-awesome.min.css" />
+    <Content Include="ThirdParty\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="ThirdParty\holderjs\gulpfile.js" />
+    <Content Include="ThirdParty\holderjs\holder.js" />
+    <Content Include="ThirdParty\holderjs\src\augment.js" />
+    <Content Include="ThirdParty\holderjs\src\holder.js" />
+    <Content Include="ThirdParty\holderjs\src\ondomready.js" />
+    <Content Include="ThirdParty\holderjs\src\polyfills.js" />
+    <Content Include="ThirdParty\holderjs\test\image.jpg" />
+    <Content Include="ThirdParty\holderjs\test\index.html" />
+    <Content Include="ThirdParty\jquery\dist\jquery.js" />
+    <Content Include="ThirdParty\jquery\dist\jquery.min.js" />
+    <Content Include="ThirdParty\jquery\MIT-LICENSE.txt" />
+    <Content Include="ThirdParty\jquery\src\ajax.js" />
+    <Content Include="ThirdParty\jquery\src\ajax\jsonp.js" />
+    <Content Include="ThirdParty\jquery\src\ajax\load.js" />
+    <Content Include="ThirdParty\jquery\src\ajax\parseJSON.js" />
+    <Content Include="ThirdParty\jquery\src\ajax\parseXML.js" />
+    <Content Include="ThirdParty\jquery\src\ajax\script.js" />
+    <Content Include="ThirdParty\jquery\src\ajax\var\nonce.js" />
+    <Content Include="ThirdParty\jquery\src\ajax\var\rquery.js" />
+    <Content Include="ThirdParty\jquery\src\ajax\xhr.js" />
+    <Content Include="ThirdParty\jquery\src\attributes.js" />
+    <Content Include="ThirdParty\jquery\src\attributes\attr.js" />
+    <Content Include="ThirdParty\jquery\src\attributes\classes.js" />
+    <Content Include="ThirdParty\jquery\src\attributes\prop.js" />
+    <Content Include="ThirdParty\jquery\src\attributes\support.js" />
+    <Content Include="ThirdParty\jquery\src\attributes\val.js" />
+    <Content Include="ThirdParty\jquery\src\callbacks.js" />
+    <Content Include="ThirdParty\jquery\src\core.js" />
+    <Content Include="ThirdParty\jquery\src\core\access.js" />
+    <Content Include="ThirdParty\jquery\src\core\init.js" />
+    <Content Include="ThirdParty\jquery\src\core\parseHTML.js" />
+    <Content Include="ThirdParty\jquery\src\core\ready.js" />
+    <Content Include="ThirdParty\jquery\src\core\var\rsingleTag.js" />
+    <Content Include="ThirdParty\jquery\src\css.js" />
+    <Content Include="ThirdParty\jquery\src\css\addGetHookIf.js" />
+    <Content Include="ThirdParty\jquery\src\css\curCSS.js" />
+    <Content Include="ThirdParty\jquery\src\css\defaultDisplay.js" />
+    <Content Include="ThirdParty\jquery\src\css\hiddenVisibleSelectors.js" />
+    <Content Include="ThirdParty\jquery\src\css\support.js" />
+    <Content Include="ThirdParty\jquery\src\css\swap.js" />
+    <Content Include="ThirdParty\jquery\src\css\var\cssExpand.js" />
+    <Content Include="ThirdParty\jquery\src\css\var\getStyles.js" />
+    <Content Include="ThirdParty\jquery\src\css\var\isHidden.js" />
+    <Content Include="ThirdParty\jquery\src\css\var\rmargin.js" />
+    <Content Include="ThirdParty\jquery\src\css\var\rnumnonpx.js" />
+    <Content Include="ThirdParty\jquery\src\data.js" />
+    <Content Include="ThirdParty\jquery\src\data\accepts.js" />
+    <Content Include="ThirdParty\jquery\src\data\Data.js" />
+    <Content Include="ThirdParty\jquery\src\data\var\data_priv.js" />
+    <Content Include="ThirdParty\jquery\src\data\var\data_user.js" />
+    <Content Include="ThirdParty\jquery\src\deferred.js" />
+    <Content Include="ThirdParty\jquery\src\deprecated.js" />
+    <Content Include="ThirdParty\jquery\src\dimensions.js" />
+    <Content Include="ThirdParty\jquery\src\effects.js" />
+    <Content Include="ThirdParty\jquery\src\effects\animatedSelector.js" />
+    <Content Include="ThirdParty\jquery\src\effects\Tween.js" />
+    <Content Include="ThirdParty\jquery\src\event.js" />
+    <Content Include="ThirdParty\jquery\src\event\ajax.js" />
+    <Content Include="ThirdParty\jquery\src\event\alias.js" />
+    <Content Include="ThirdParty\jquery\src\event\support.js" />
+    <Content Include="ThirdParty\jquery\src\exports\amd.js" />
+    <Content Include="ThirdParty\jquery\src\exports\global.js" />
+    <Content Include="ThirdParty\jquery\src\intro.js" />
+    <Content Include="ThirdParty\jquery\src\jquery.js" />
+    <Content Include="ThirdParty\jquery\src\manipulation.js" />
+    <Content Include="ThirdParty\jquery\src\manipulation\support.js" />
+    <Content Include="ThirdParty\jquery\src\manipulation\var\rcheckableType.js" />
+    <Content Include="ThirdParty\jquery\src\manipulation\_evalUrl.js" />
+    <Content Include="ThirdParty\jquery\src\offset.js" />
+    <Content Include="ThirdParty\jquery\src\outro.js" />
+    <Content Include="ThirdParty\jquery\src\queue.js" />
+    <Content Include="ThirdParty\jquery\src\queue\delay.js" />
+    <Content Include="ThirdParty\jquery\src\selector-native.js" />
+    <Content Include="ThirdParty\jquery\src\selector-sizzle.js" />
+    <Content Include="ThirdParty\jquery\src\selector.js" />
+    <Content Include="ThirdParty\jquery\src\serialize.js" />
+    <Content Include="ThirdParty\jquery\src\sizzle\dist\sizzle.js" />
+    <Content Include="ThirdParty\jquery\src\sizzle\dist\sizzle.min.js" />
+    <Content Include="ThirdParty\jquery\src\traversing.js" />
+    <Content Include="ThirdParty\jquery\src\traversing\findFilter.js" />
+    <Content Include="ThirdParty\jquery\src\traversing\var\rneedsContext.js" />
+    <Content Include="ThirdParty\jquery\src\var\arr.js" />
+    <Content Include="ThirdParty\jquery\src\var\class2type.js" />
+    <Content Include="ThirdParty\jquery\src\var\concat.js" />
+    <Content Include="ThirdParty\jquery\src\var\hasOwn.js" />
+    <Content Include="ThirdParty\jquery\src\var\indexOf.js" />
+    <Content Include="ThirdParty\jquery\src\var\pnum.js" />
+    <Content Include="ThirdParty\jquery\src\var\push.js" />
+    <Content Include="ThirdParty\jquery\src\var\rnotwhite.js" />
+    <Content Include="ThirdParty\jquery\src\var\slice.js" />
+    <Content Include="ThirdParty\jquery\src\var\strundefined.js" />
+    <Content Include="ThirdParty\jquery\src\var\support.js" />
+    <Content Include="ThirdParty\jquery\src\var\toString.js" />
+    <Content Include="ThirdParty\jquery\src\wrap.js" />
+    <Content Include="ThirdParty\metisMenu\dist\metisMenu.css" />
+    <Content Include="ThirdParty\metisMenu\dist\metisMenu.js" />
+    <Content Include="ThirdParty\metisMenu\dist\metisMenu.min.css" />
+    <Content Include="ThirdParty\metisMenu\dist\metisMenu.min.js" />
+    <Content Include="ThirdParty\metisMenu\Gruntfile.js" />
+    <Content Include="ThirdParty\metisMenu\src\metisMenu.css" />
+    <Content Include="ThirdParty\metisMenu\src\metisMenu.js" />
+    <Content Include="ThirdParty\mocha\media\logo.svg" />
+    <Content Include="ThirdParty\mocha\mocha.css" />
+    <Content Include="ThirdParty\mocha\mocha.js" />
+    <Content Include="ThirdParty\morrisjs\examples\area-as-line.html" />
+    <Content Include="ThirdParty\morrisjs\examples\area.html" />
+    <Content Include="ThirdParty\morrisjs\examples\bar-colors.html" />
+    <Content Include="ThirdParty\morrisjs\examples\bar-no-axes.html" />
+    <Content Include="ThirdParty\morrisjs\examples\bar.html" />
+    <Content Include="ThirdParty\morrisjs\examples\days.html" />
+    <Content Include="ThirdParty\morrisjs\examples\decimal-custom-hover.html" />
+    <Content Include="ThirdParty\morrisjs\examples\diagonal-xlabels-bar.html" />
+    <Content Include="ThirdParty\morrisjs\examples\diagonal-xlabels.html" />
+    <Content Include="ThirdParty\morrisjs\examples\donut-colors.html" />
+    <Content Include="ThirdParty\morrisjs\examples\donut-formatter.html" />
+    <Content Include="ThirdParty\morrisjs\examples\donut.html" />
+    <Content Include="ThirdParty\morrisjs\examples\dst.html" />
+    <Content Include="ThirdParty\morrisjs\examples\events.html" />
+    <Content Include="ThirdParty\morrisjs\examples\goals.html" />
+    <Content Include="ThirdParty\morrisjs\examples\lib\example.css" />
+    <Content Include="ThirdParty\morrisjs\examples\lib\example.js" />
+    <Content Include="ThirdParty\morrisjs\examples\months-no-smooth.html" />
+    <Content Include="ThirdParty\morrisjs\examples\negative.html" />
+    <Content Include="ThirdParty\morrisjs\examples\no-grid.html" />
+    <Content Include="ThirdParty\morrisjs\examples\non-continuous.html" />
+    <Content Include="ThirdParty\morrisjs\examples\non-date.html" />
+    <Content Include="ThirdParty\morrisjs\examples\quarters.html" />
+    <Content Include="ThirdParty\morrisjs\examples\resize.html" />
+    <Content Include="ThirdParty\morrisjs\examples\stacked_bars.html" />
+    <Content Include="ThirdParty\morrisjs\examples\timestamps.html" />
+    <Content Include="ThirdParty\morrisjs\examples\updating.html" />
+    <Content Include="ThirdParty\morrisjs\examples\weeks.html" />
+    <Content Include="ThirdParty\morrisjs\examples\years.html" />
+    <Content Include="ThirdParty\morrisjs\examples\_template.html" />
+    <Content Include="ThirdParty\morrisjs\Gruntfile.js" />
+    <Content Include="ThirdParty\morrisjs\morris.css" />
+    <Content Include="ThirdParty\morrisjs\morris.js" />
+    <Content Include="ThirdParty\morrisjs\morris.min.js" />
+    <Content Include="ThirdParty\morrisjs\spec\specs.html" />
+    <Content Include="ThirdParty\morrisjs\spec\viz\examples.js" />
+    <Content Include="ThirdParty\morrisjs\spec\viz\exemplary\area0.png" />
+    <Content Include="ThirdParty\morrisjs\spec\viz\exemplary\bar0.png" />
+    <Content Include="ThirdParty\morrisjs\spec\viz\exemplary\line0.png" />
+    <Content Include="ThirdParty\morrisjs\spec\viz\exemplary\stacked_bar0.png" />
+    <Content Include="ThirdParty\morrisjs\spec\viz\test.html" />
+    <Content Include="ThirdParty\morrisjs\spec\viz\visual_specs.js" />
+    <Content Include="ThirdParty\raphael\dev\amdDev.js" />
+    <Content Include="ThirdParty\raphael\dev\index.js" />
+    <Content Include="ThirdParty\raphael\dev\require.js" />
+    <Content Include="ThirdParty\raphael\license.txt" />
+    <Content Include="ThirdParty\raphael\raphael-min.js" />
+    <Content Include="ThirdParty\raphael\raphael.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="ThirdParty\bootstrap-social\.bower.json" />
+    <Content Include="ThirdParty\bootstrap-social\.editorconfig" />
+    <Content Include="ThirdParty\bootstrap-social\.gitignore" />
+    <Content Include="ThirdParty\bootstrap-social\bootstrap-social.less" />
+    <Content Include="ThirdParty\bootstrap-social\bootstrap-social.scss" />
+    <Content Include="ThirdParty\bootstrap-social\bower.json" />
+    <Content Include="ThirdParty\bootstrap-social\README.md" />
+    <Content Include="ThirdParty\bootstrap\.bower.json" />
+    <Content Include="ThirdParty\bootstrap\bower.json" />
+    <Content Include="ThirdParty\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <Content Include="ThirdParty\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="ThirdParty\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="ThirdParty\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="ThirdParty\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="ThirdParty\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="ThirdParty\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="ThirdParty\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="ThirdParty\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="ThirdParty\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="ThirdParty\bootstrap\grunt\.jshintrc" />
+    <Content Include="ThirdParty\bootstrap\grunt\configBridge.json" />
+    <Content Include="ThirdParty\bootstrap\grunt\sauce_browsers.yml" />
+    <Content Include="ThirdParty\bootstrap\js\.jscsrc" />
+    <Content Include="ThirdParty\bootstrap\js\.jshintrc" />
+    <Content Include="ThirdParty\bootstrap\less\.csscomb.json" />
+    <Content Include="ThirdParty\bootstrap\less\.csslintrc" />
+    <Content Include="ThirdParty\bootstrap\less\alerts.less" />
+    <Content Include="ThirdParty\bootstrap\less\badges.less" />
+    <Content Include="ThirdParty\bootstrap\less\bootstrap.less" />
+    <Content Include="ThirdParty\bootstrap\less\breadcrumbs.less" />
+    <Content Include="ThirdParty\bootstrap\less\button-groups.less" />
+    <Content Include="ThirdParty\bootstrap\less\buttons.less" />
+    <Content Include="ThirdParty\bootstrap\less\carousel.less" />
+    <Content Include="ThirdParty\bootstrap\less\close.less" />
+    <Content Include="ThirdParty\bootstrap\less\code.less" />
+    <Content Include="ThirdParty\bootstrap\less\component-animations.less" />
+    <Content Include="ThirdParty\bootstrap\less\dropdowns.less" />
+    <Content Include="ThirdParty\bootstrap\less\forms.less" />
+    <Content Include="ThirdParty\bootstrap\less\glyphicons.less" />
+    <Content Include="ThirdParty\bootstrap\less\grid.less" />
+    <Content Include="ThirdParty\bootstrap\less\input-groups.less" />
+    <Content Include="ThirdParty\bootstrap\less\jumbotron.less" />
+    <Content Include="ThirdParty\bootstrap\less\labels.less" />
+    <Content Include="ThirdParty\bootstrap\less\list-group.less" />
+    <Content Include="ThirdParty\bootstrap\less\media.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\alerts.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\background-variant.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\border-radius.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\buttons.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\center-block.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\clearfix.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\forms.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\gradients.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\grid-framework.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\grid.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\hide-text.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\image.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\labels.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\list-group.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\nav-divider.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\nav-vertical-align.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\opacity.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\pagination.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\panels.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\progress-bar.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\reset-filter.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\resize.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\responsive-visibility.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\size.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\tab-focus.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\table-row.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\text-emphasis.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\text-overflow.less" />
+    <Content Include="ThirdParty\bootstrap\less\mixins\vendor-prefixes.less" />
+    <Content Include="ThirdParty\bootstrap\less\modals.less" />
+    <Content Include="ThirdParty\bootstrap\less\navbar.less" />
+    <Content Include="ThirdParty\bootstrap\less\navs.less" />
+    <Content Include="ThirdParty\bootstrap\less\normalize.less" />
+    <Content Include="ThirdParty\bootstrap\less\pager.less" />
+    <Content Include="ThirdParty\bootstrap\less\pagination.less" />
+    <Content Include="ThirdParty\bootstrap\less\panels.less" />
+    <Content Include="ThirdParty\bootstrap\less\popovers.less" />
+    <Content Include="ThirdParty\bootstrap\less\print.less" />
+    <Content Include="ThirdParty\bootstrap\less\progress-bars.less" />
+    <Content Include="ThirdParty\bootstrap\less\responsive-embed.less" />
+    <Content Include="ThirdParty\bootstrap\less\responsive-utilities.less" />
+    <Content Include="ThirdParty\bootstrap\less\scaffolding.less" />
+    <Content Include="ThirdParty\bootstrap\less\tables.less" />
+    <Content Include="ThirdParty\bootstrap\less\theme.less" />
+    <Content Include="ThirdParty\bootstrap\less\thumbnails.less" />
+    <Content Include="ThirdParty\bootstrap\less\tooltip.less" />
+    <Content Include="ThirdParty\bootstrap\less\type.less" />
+    <Content Include="ThirdParty\bootstrap\less\utilities.less" />
+    <Content Include="ThirdParty\bootstrap\less\variables.less" />
+    <Content Include="ThirdParty\bootstrap\less\wells.less" />
+    <Content Include="ThirdParty\bootstrap\LICENSE" />
+    <Content Include="ThirdParty\bootstrap\package.json" />
+    <Content Include="ThirdParty\bootstrap\README.md" />
+    <Content Include="ThirdParty\datatables-plugins\.bower.json" />
+    <Content Include="ThirdParty\datatables-plugins\i18n\English.lang" />
+    <Content Include="ThirdParty\datatables-plugins\i18n\Portuguese-Brasil.lang" />
+    <Content Include="ThirdParty\datatables-plugins\i18n\Spanish.lang" />
+    <Content Include="ThirdParty\datatables-plugins\integration\jqueryui\dataTables.jqueryui.scss" />
+    <Content Include="ThirdParty\datatables-plugins\make.sh" />
+    <Content Include="ThirdParty\datatables-plugins\README.md" />
+    <Content Include="ThirdParty\datatables-plugins\sorting\.DS_Store" />
+    <Content Include="ThirdParty\datatables-responsive\.bower.json" />
+    <Content Include="ThirdParty\datatables-responsive\.gitignore" />
+    <Content Include="ThirdParty\datatables-responsive\bower.json" />
+    <Content Include="ThirdParty\datatables-responsive\css\dataTables.responsive.scss" />
+    <Content Include="ThirdParty\datatables-responsive\examples\.DS_Store" />
+    <Content Include="ThirdParty\datatables-responsive\examples\initialisation\.DS_Store" />
+    <Content Include="ThirdParty\datatables-responsive\make.sh" />
+    <Content Include="ThirdParty\datatables-responsive\Readme.md" />
+    <Content Include="ThirdParty\datatables\.bower.json" />
+    <Content Include="ThirdParty\datatables\bower.json" />
+    <Content Include="ThirdParty\datatables\Contributing.md" />
+    <Content Include="ThirdParty\datatables\media\images\Sorting icons.psd" />
+    <Content Include="ThirdParty\datatables\Readme.md" />
+    <Content Include="ThirdParty\flot.tooltip\.bower.json" />
+    <Content Include="ThirdParty\flot.tooltip\bower.json" />
+    <Content Include="ThirdParty\flot\.bower.json" />
+    <Content Include="ThirdParty\flot\.gitignore" />
+    <Content Include="ThirdParty\flot\.travis.yml" />
+    <Content Include="ThirdParty\flot\API.md" />
+    <Content Include="ThirdParty\flot\component.json" />
+    <Content Include="ThirdParty\flot\CONTRIBUTING.md" />
+    <Content Include="ThirdParty\flot\examples\ajax\data-eu-gdp-growth-1.json" />
+    <Content Include="ThirdParty\flot\examples\ajax\data-eu-gdp-growth-2.json" />
+    <Content Include="ThirdParty\flot\examples\ajax\data-eu-gdp-growth-3.json" />
+    <Content Include="ThirdParty\flot\examples\ajax\data-eu-gdp-growth-4.json" />
+    <Content Include="ThirdParty\flot\examples\ajax\data-eu-gdp-growth-5.json" />
+    <Content Include="ThirdParty\flot\examples\ajax\data-eu-gdp-growth.json" />
+    <Content Include="ThirdParty\flot\examples\ajax\data-japan-gdp-growth.json" />
+    <Content Include="ThirdParty\flot\examples\ajax\data-usa-gdp-growth.json" />
+    <Content Include="ThirdParty\flot\examples\axes-time-zones\tz\africa" />
+    <Content Include="ThirdParty\flot\examples\axes-time-zones\tz\antarctica" />
+    <Content Include="ThirdParty\flot\examples\axes-time-zones\tz\asia" />
+    <Content Include="ThirdParty\flot\examples\axes-time-zones\tz\australasia" />
+    <Content Include="ThirdParty\flot\examples\axes-time-zones\tz\backward" />
+    <Content Include="ThirdParty\flot\examples\axes-time-zones\tz\etcetera" />
+    <Content Include="ThirdParty\flot\examples\axes-time-zones\tz\europe" />
+    <Content Include="ThirdParty\flot\examples\axes-time-zones\tz\factory" />
+    <Content Include="ThirdParty\flot\examples\axes-time-zones\tz\iso3166.tab" />
+    <Content Include="ThirdParty\flot\examples\axes-time-zones\tz\leapseconds" />
+    <Content Include="ThirdParty\flot\examples\axes-time-zones\tz\northamerica" />
+    <Content Include="ThirdParty\flot\examples\axes-time-zones\tz\pacificnew" />
+    <Content Include="ThirdParty\flot\examples\axes-time-zones\tz\solar87" />
+    <Content Include="ThirdParty\flot\examples\axes-time-zones\tz\solar88" />
+    <Content Include="ThirdParty\flot\examples\axes-time-zones\tz\solar89" />
+    <Content Include="ThirdParty\flot\examples\axes-time-zones\tz\southamerica" />
+    <Content Include="ThirdParty\flot\examples\axes-time-zones\tz\systemv" />
+    <Content Include="ThirdParty\flot\examples\axes-time-zones\tz\yearistype.sh" />
+    <Content Include="ThirdParty\flot\examples\axes-time-zones\tz\zone.tab" />
+    <Content Include="ThirdParty\flot\FAQ.md" />
+    <Content Include="ThirdParty\flot\flot.jquery.json" />
+    <Content Include="ThirdParty\flot\Makefile" />
+    <Content Include="ThirdParty\flot\NEWS.md" />
+    <Content Include="ThirdParty\flot\package.json" />
+    <Content Include="ThirdParty\flot\PLUGINS.md" />
+    <Content Include="ThirdParty\flot\README.md" />
+    <Content Include="ThirdParty\font-awesome\.bower.json" />
+    <Content Include="ThirdParty\font-awesome\.gitignore" />
+    <Content Include="ThirdParty\font-awesome\.npmignore" />
+    <Content Include="ThirdParty\font-awesome\bower.json" />
+    <Content Include="ThirdParty\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="ThirdParty\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="ThirdParty\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="ThirdParty\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="ThirdParty\font-awesome\less\bordered-pulled.less" />
+    <Content Include="ThirdParty\font-awesome\less\core.less" />
+    <Content Include="ThirdParty\font-awesome\less\extras.less" />
+    <Content Include="ThirdParty\font-awesome\less\fixed-width.less" />
+    <Content Include="ThirdParty\font-awesome\less\font-awesome.less" />
+    <Content Include="ThirdParty\font-awesome\less\icons.less" />
+    <Content Include="ThirdParty\font-awesome\less\larger.less" />
+    <Content Include="ThirdParty\font-awesome\less\list.less" />
+    <Content Include="ThirdParty\font-awesome\less\mixins.less" />
+    <Content Include="ThirdParty\font-awesome\less\path.less" />
+    <Content Include="ThirdParty\font-awesome\less\rotated-flipped.less" />
+    <Content Include="ThirdParty\font-awesome\less\spinning.less" />
+    <Content Include="ThirdParty\font-awesome\less\stacked.less" />
+    <Content Include="ThirdParty\font-awesome\less\variables.less" />
+    <Content Include="ThirdParty\font-awesome\scss\font-awesome.scss" />
+    <Content Include="ThirdParty\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="ThirdParty\font-awesome\scss\_core.scss" />
+    <Content Include="ThirdParty\font-awesome\scss\_extras.scss" />
+    <Content Include="ThirdParty\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="ThirdParty\font-awesome\scss\_icons.scss" />
+    <Content Include="ThirdParty\font-awesome\scss\_larger.scss" />
+    <Content Include="ThirdParty\font-awesome\scss\_list.scss" />
+    <Content Include="ThirdParty\font-awesome\scss\_mixins.scss" />
+    <Content Include="ThirdParty\font-awesome\scss\_path.scss" />
+    <Content Include="ThirdParty\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="ThirdParty\font-awesome\scss\_spinning.scss" />
+    <Content Include="ThirdParty\font-awesome\scss\_stacked.scss" />
+    <Content Include="ThirdParty\font-awesome\scss\_variables.scss" />
+    <Content Include="ThirdParty\holderjs\.bower.json" />
+    <Content Include="ThirdParty\holderjs\.gitattributes" />
+    <Content Include="ThirdParty\holderjs\.gitignore" />
+    <Content Include="ThirdParty\holderjs\.jshintrc" />
+    <Content Include="ThirdParty\holderjs\bower.json" />
+    <Content Include="ThirdParty\holderjs\composer.json" />
+    <Content Include="ThirdParty\holderjs\package.json" />
+    <Content Include="ThirdParty\holderjs\README.md" />
+    <Content Include="ThirdParty\holderjs\test\.gitignore" />
+    <Content Include="ThirdParty\jquery\.bower.json" />
+    <Content Include="ThirdParty\jquery\bower.json" />
+    <Content Include="ThirdParty\jquery\dist\jquery.min.map" />
+    <Content Include="ThirdParty\jquery\src\sizzle\dist\sizzle.min.map" />
+    <Content Include="ThirdParty\metisMenu\.bower.json" />
+    <Content Include="ThirdParty\metisMenu\bower.json" />
+    <Content Include="ThirdParty\metisMenu\LICENSE" />
+    <Content Include="ThirdParty\metisMenu\package.json" />
+    <Content Include="ThirdParty\metisMenu\README.md" />
+    <Content Include="ThirdParty\mocha\.bower.json" />
+    <Content Include="ThirdParty\mocha\bower.json" />
+    <Content Include="ThirdParty\mocha\History.md" />
+    <Content Include="ThirdParty\mocha\LICENSE" />
+    <Content Include="ThirdParty\mocha\Readme.md" />
+    <Content Include="ThirdParty\morrisjs\.bower.json" />
+    <Content Include="ThirdParty\morrisjs\.gitignore" />
+    <Content Include="ThirdParty\morrisjs\.travis.yml" />
+    <Content Include="ThirdParty\morrisjs\bower.json" />
+    <Content Include="ThirdParty\morrisjs\bower.travis.json" />
+    <Content Include="ThirdParty\morrisjs\less\morris.core.less" />
+    <Content Include="ThirdParty\morrisjs\lib\morris.area.coffee" />
+    <Content Include="ThirdParty\morrisjs\lib\morris.bar.coffee" />
+    <Content Include="ThirdParty\morrisjs\lib\morris.coffee" />
+    <Content Include="ThirdParty\morrisjs\lib\morris.donut.coffee" />
+    <Content Include="ThirdParty\morrisjs\lib\morris.grid.coffee" />
+    <Content Include="ThirdParty\morrisjs\lib\morris.hover.coffee" />
+    <Content Include="ThirdParty\morrisjs\lib\morris.line.coffee" />
+    <Content Include="ThirdParty\morrisjs\package.json" />
+    <Content Include="ThirdParty\morrisjs\README.md" />
+    <Content Include="ThirdParty\morrisjs\spec\lib\area\area_spec.coffee" />
+    <Content Include="ThirdParty\morrisjs\spec\lib\bar\bar_spec.coffee" />
+    <Content Include="ThirdParty\morrisjs\spec\lib\bar\colours.coffee" />
+    <Content Include="ThirdParty\morrisjs\spec\lib\commas_spec.coffee" />
+    <Content Include="ThirdParty\morrisjs\spec\lib\donut\donut_spec.coffee" />
+    <Content Include="ThirdParty\morrisjs\spec\lib\grid\auto_grid_lines_spec.coffee" />
+    <Content Include="ThirdParty\morrisjs\spec\lib\grid\set_data_spec.coffee" />
+    <Content Include="ThirdParty\morrisjs\spec\lib\grid\y_label_format_spec.coffee" />
+    <Content Include="ThirdParty\morrisjs\spec\lib\hover_spec.coffee" />
+    <Content Include="ThirdParty\morrisjs\spec\lib\label_series_spec.coffee" />
+    <Content Include="ThirdParty\morrisjs\spec\lib\line\line_spec.coffee" />
+    <Content Include="ThirdParty\morrisjs\spec\lib\pad_spec.coffee" />
+    <Content Include="ThirdParty\morrisjs\spec\lib\parse_time_spec.coffee" />
+    <Content Include="ThirdParty\morrisjs\spec\support\placeholder.coffee" />
+    <Content Include="ThirdParty\morrisjs\spec\viz\run.sh" />
+    <Content Include="ThirdParty\raphael\.bower.json" />
+    <Content Include="ThirdParty\raphael\bower.json" />
+    <Content Include="Views\Projeto\Novo.cshtml" />
+    <Content Include="Views\Projeto\EditorTemplates\PerguntasGerais.cshtml" />
+    <Content Include="Views\Projeto\EditorTemplates\Ambientes.cshtml" />
+    <Content Include="Views\Projeto\CadastroAmbientes.cshtml" />
+    <Content Include="Views\Projeto\Index.cshtml" />
+    <Content Include="Views\Medidor\Index.cshtml" />
+    <Content Include="Views\Medidor\RequisicaoDeMedidas.cshtml" />
+    <Content Include="Views\Shared\_Cliente.cshtml" />
+    <Content Include="Views\Shared\_Calendario.cshtml" />
+    <Content Include="Views\Medidor\AnexarPorAmbiente.cshtml" />
+    <Content Include="Views\Conferente\Index.cshtml" />
+    <Content Include="Views\Conferente\AnexarPorAmbiente.cshtml" />
+    <Content Include="Views\Pessoas\Create.cshtml" />
+    <Content Include="Views\Pessoas\Delete.cshtml" />
+    <Content Include="Views\Pessoas\Details.cshtml" />
+    <Content Include="Views\Pessoas\Edit.cshtml" />
+    <Content Include="Views\Pessoas\Index.cshtml" />
+    <Content Include="Views\Telefones\Create.cshtml" />
+    <Content Include="Views\Telefones\Delete.cshtml" />
+    <Content Include="Views\Telefones\Details.cshtml" />
+    <Content Include="Views\Telefones\Edit.cshtml" />
+    <Content Include="Views\Telefones\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Seguranca\Views\Login\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <Content Include="Areas\Seguranca\Views\web.config" />
+    <Content Include="Areas\Seguranca\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Seguranca\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Seguranca\Views\Login\Index1.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Auge.IoC\Auge.IoC.csproj">
+      <Project>{52d663a4-2bbe-48d4-b66e-1aed30ff2ce7}</Project>
+      <Name>Auge.IoC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Auge.Model\Auge.Model.csproj">
+      <Project>{83a04948-a4af-4fea-be9c-791973c403e8}</Project>
+      <Name>Auge.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Auge.Service\Auge.Service.csproj">
+      <Project>{6a644b40-3d88-45b0-8937-f45ebad5e381}</Project>
+      <Name>Auge.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51591</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51591/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

@@ -1,0 +1,12 @@
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Model\bin\Debug\Auge.Model.dll.config
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Model\bin\Debug\Auge.Model.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Model\bin\Debug\Auge.Model.pdb
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Model\obj\Debug\Auge.Model.csprojResolveAssemblyReference.cache
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Model\obj\Debug\Auge.Model.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Model\obj\Debug\Auge.Model.pdb
+D:\Projetos\Asp Net\Auge\Auge\Auge.Model\bin\Debug\Auge.Model.dll.config
+D:\Projetos\Asp Net\Auge\Auge\Auge.Model\bin\Debug\Auge.Model.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.Model\bin\Debug\Auge.Model.pdb
+D:\Projetos\Asp Net\Auge\Auge\Auge.Model\obj\Debug\Auge.Model.csprojResolveAssemblyReference.cache
+D:\Projetos\Asp Net\Auge\Auge\Auge.Model\obj\Debug\Auge.Model.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.Model\obj\Debug\Auge.Model.pdb

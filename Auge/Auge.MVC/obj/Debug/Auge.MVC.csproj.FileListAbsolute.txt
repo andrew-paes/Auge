@@ -1,0 +1,108 @@
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\Auge.MVC.dll.config
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\Auge.MVC.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\Auge.MVC.pdb
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\Antlr3.Runtime.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\Auge.IoC.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\Auge.Model.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\Auge.Service.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\Autofac.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\Autofac.Integration.Mvc.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\EntityFramework.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\EntityFramework.SqlServer.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\Microsoft.Web.Infrastructure.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\Newtonsoft.Json.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\System.Net.Http.Formatting.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\System.Web.Helpers.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\System.Web.Http.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\System.Web.Http.WebHost.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\System.Web.Mvc.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\System.Web.Optimization.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\System.Web.Razor.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\System.Web.WebPages.Deployment.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\System.Web.WebPages.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\System.Web.WebPages.Razor.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\WebGrease.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\Auge.Repository.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\MySql.Data.Entity.EF6.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\Auge.IoC.pdb
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\Auge.Model.pdb
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\Auge.Service.pdb
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\Autofac.xml
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\Autofac.Integration.Mvc.xml
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\EntityFramework.xml
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\EntityFramework.SqlServer.xml
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\Newtonsoft.Json.xml
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\System.Net.Http.Formatting.xml
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\System.Web.Helpers.xml
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\System.Web.Http.xml
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\System.Web.Http.WebHost.xml
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\System.Web.Mvc.xml
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\System.Web.Optimization.xml
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\System.Web.Razor.xml
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\System.Web.WebPages.xml
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\System.Web.WebPages.Deployment.xml
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\System.Web.WebPages.Razor.xml
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\Antlr3.Runtime.pdb
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\Auge.Repository.pdb
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\obj\Debug\Auge.MVC.csprojResolveAssemblyReference.cache
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\obj\Debug\Auge.MVC.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\obj\Debug\Auge.MVC.pdb
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\AutoMapper.Net4.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\AutoMapper.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\AutoMapper.pdb
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\AutoMapper.xml
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.MVC\bin\AutoMapper.Net4.pdb
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\AutoMapper.Net4.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\Auge.MVC.dll.config
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\Auge.MVC.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\Auge.MVC.pdb
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\Antlr3.Runtime.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\Auge.IoC.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\Auge.Model.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\Auge.Service.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\Autofac.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\Autofac.Integration.Mvc.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\AutoMapper.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\EntityFramework.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\EntityFramework.SqlServer.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\Microsoft.Web.Infrastructure.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\Newtonsoft.Json.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\System.Net.Http.Formatting.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\System.Web.Helpers.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\System.Web.Http.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\System.Web.Http.WebHost.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\System.Web.Mvc.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\System.Web.Optimization.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\System.Web.Razor.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\System.Web.WebPages.Deployment.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\System.Web.WebPages.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\System.Web.WebPages.Razor.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\WebGrease.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\Auge.Repository.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\MySql.Data.Entity.EF6.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\Auge.IoC.pdb
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\Auge.Model.pdb
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\Auge.Service.pdb
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\Autofac.xml
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\Autofac.Integration.Mvc.xml
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\AutoMapper.pdb
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\AutoMapper.xml
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\AutoMapper.Net4.pdb
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\EntityFramework.xml
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\EntityFramework.SqlServer.xml
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\Newtonsoft.Json.xml
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\System.Net.Http.Formatting.xml
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\System.Web.Helpers.xml
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\System.Web.Http.xml
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\System.Web.Http.WebHost.xml
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\System.Web.Mvc.xml
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\System.Web.Optimization.xml
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\System.Web.Razor.xml
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\System.Web.WebPages.xml
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\System.Web.WebPages.Deployment.xml
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\System.Web.WebPages.Razor.xml
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\Antlr3.Runtime.pdb
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\bin\Auge.Repository.pdb
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\obj\Debug\Auge.MVC.csprojResolveAssemblyReference.cache
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\obj\Debug\Auge.MVC.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.MVC\obj\Debug\Auge.MVC.pdb

@@ -1,0 +1,14 @@
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Service\bin\Debug\Auge.Service.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Service\bin\Debug\Auge.Service.pdb
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Service\bin\Debug\Auge.Model.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Service\bin\Debug\Auge.Model.pdb
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Service\obj\Debug\Auge.Service.csprojResolveAssemblyReference.cache
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Service\obj\Debug\Auge.Service.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Service\obj\Debug\Auge.Service.pdb
+D:\Projetos\Asp Net\Auge\Auge\Auge.Service\bin\Debug\Auge.Service.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.Service\bin\Debug\Auge.Service.pdb
+D:\Projetos\Asp Net\Auge\Auge\Auge.Service\bin\Debug\Auge.Model.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.Service\bin\Debug\Auge.Model.pdb
+D:\Projetos\Asp Net\Auge\Auge\Auge.Service\obj\Debug\Auge.Service.csprojResolveAssemblyReference.cache
+D:\Projetos\Asp Net\Auge\Auge\Auge.Service\obj\Debug\Auge.Service.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.Service\obj\Debug\Auge.Service.pdb

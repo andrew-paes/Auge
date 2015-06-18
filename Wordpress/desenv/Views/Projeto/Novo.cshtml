@@ -1,0 +1,111 @@
+﻿@model Auge.MVC.Models.CadastroProjetoVM
+
+@{
+    ViewBag.Title = "Novo";
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="page-header">Novo Projeto</h1>
+    </div>
+</div>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="row">
+        <div class="col-md-3">
+            <h3>Logo Loja</h3>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                @*@Html.LabelFor(model => model.Loja.Nome, htmlAttributes: new { @class = "control-label" })*@
+                @Html.Label("Loja", htmlAttributes: new { @class = "control-label col-md-12" })
+                @*@Html.LabelFor(model => model.Loja.Nome, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.Label("Loja 1", new { @class = "col-md-12", style = "font-weight: 100;" })
+                
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                @*@Html.LabelFor(model => model.Loja.Nome, htmlAttributes: new { @class = "control-label" })*@
+                @Html.Label("Projetista", htmlAttributes: new { @class = "control-label col-md-12" })
+                @*@Html.LabelFor(model => model.Usuario.Nome, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.Label("Projetista 1", new { @class = "col-md-12", style = "font-weight: 100;" })
+                
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                @*@Html.LabelFor(model => model.Loja.Nome, htmlAttributes: new { @class = "control-label" })*@
+                @Html.Label("Nº identificador da loja", htmlAttributes: new { @class = "control-label" })
+                @Html.EditorFor(model => model.Projeto.IdentificadorInternoLoja, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Projeto.IdentificadorInternoLoja, "", new { @class = "text-danger" })
+            </div>
+        </div>        
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Informações do Cliente
+                </div>
+                <div class="panel-body">
+                    @{
+                        Html.RenderPartial("_Cliente", Model.Projeto.Cliente);
+                    }
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Perguntas Gerais do Projeto
+                </div>
+                <div class="panel-body">
+                    @Html.EditorFor(p => p.Projeto.PerguntasGerais, "PerguntasGerais")                   
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Ambientes
+                </div>
+                <div class="panel-body">
+                    @Html.EditorFor(p => p.Projeto.Ambientes, "Ambientes")
+                </div>
+                <!-- /.panel-body -->
+            </div>
+        </div>
+        <!-- /.col-md-12 -->
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            @Html.ActionLink("Imprimir Relatório Geral", string.Empty, null, new { @class = "btn btn-default" })            
+        </div>
+        <div class="col-md-6 text-right">
+            <input type="submit" value="Enviar projeto para Conferência" class="btn btn-default btn-info" />
+        </div>
+    </div>
+}
+
+@section scripts
+{
+    <script>
+        $(function () {
+            $("#addAmbiente").click(function () {
+                //var id = $(this).attr("data-id");
+                $("#modal").load("CadastroAmbientes", function () {
+                    $("#modal").modal();
+                })
+            });
+        });
+    </script>
+}

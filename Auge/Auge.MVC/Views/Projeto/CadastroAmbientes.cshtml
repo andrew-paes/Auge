@@ -1,0 +1,131 @@
+﻿@model Auge.MVC.Models.AmbienteVM
+
+@{
+    Layout = null;
+}
+<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        @using (Html.BeginForm("CadastroAmbientes", "Projeto", FormMethod.Post, new { enctype = "multipart/form-data", id = "frm_projeto" }))
+        {
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Ambientes</h4>
+            </div>
+
+            @Html.AntiForgeryToken()
+
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            @Html.Label("Ambiente", htmlAttributes: new { @class = "control-label" })
+                            @Html.DropDownListFor(model => model.Nome,
+                                               new List<SelectListItem>
+                                               { new SelectListItem
+                                                 {
+                                                     Text = "Banheiro", Value = "Banheiro",
+                                                 },
+                                                 new SelectListItem
+                                                 {
+                                                     Text = "Cozinha", Value = "Cozinha",
+                                                 }
+                                               },
+                                               new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Nome, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            @Html.Label("Apelido", htmlAttributes: new { @class = "control-label" })
+                            @Html.EditorFor(model => model.Apelido, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Apelido, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                            <thead>
+                                <tr>
+                                    <th>Pergunta</th>
+                                    <th>Resposta 1</th>
+                                    <th>Resposta 2</th>
+                                    <th>Resposta 3</th>
+                                    <th>Solicitar Orçamento</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @for (int i = 1; i <= 5; i++)
+                                {
+                                    <tr class="@(i % 2 == 0 ? "odd" : "even") ">
+                                        <td>Pergunta @i.ToString()</td>
+                                        <td>
+                                            @Html.DropDownListFor(model => model.Perguntas,
+                                               new List<SelectListItem>
+                                               { new SelectListItem
+                                                 {
+                                                     Text = "Resposta 1", Value = "Resposta 1"
+                                                 }
+                                               },
+                                               new { @class = "form-control" })
+                                        </td>
+                                        <td>
+                                            @Html.DropDownListFor(model => model.Perguntas,
+                                               new List<SelectListItem>
+                                               { new SelectListItem
+                                                 {
+                                                     Text = "Resposta 2", Value = "Resposta 2"
+                                                 }
+                                               },
+                                               new { @class = "form-control" })
+                                        </td>
+                                        <td>
+                                            @Html.DropDownListFor(model => model.Perguntas,
+                                               new List<SelectListItem>
+                                               { new SelectListItem
+                                                 {
+                                                     Text = "Resposta 3", Value = "Resposta 3"
+                                                 }
+                                               },
+                                               new { @class = "form-control" })
+                                        </td>
+                                        <td>
+                                            @Html.DropDownListFor(model => model.Perguntas,
+                                               new List<SelectListItem>
+                                               { new SelectListItem
+                                                 {
+                                                     Text = "Sim", Value = "Sim"
+                                                 },
+                                                 new SelectListItem
+                                                 {
+                                                     Text = "Não", Value = "Não"
+                                                 }
+                                               },
+                                               new { @class = "form-control" })
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        @Html.Label("Anexo")
+                        @Html.TextBoxFor(model => model.Anexo, new { type = "file", accept = "image/*" })
+                        @Html.ValidationMessageFor(model => model.Anexo)
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">              
+                <input type="button" value="Imprimir informações do ambiente" class="btn btn-default" />
+                <input type="button" value="Salvar" class="btn btn-default btn-info" />
+                <input type="button" value="Cancelar" class="btn btn-default" data-dismiss="modal" />              
+            </div>
+        }
+    </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->

@@ -1,0 +1,184 @@
+﻿@model Auge.MVC.Models.PesquisaConferenteVM
+
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="page-header">Conferente</h1>
+    </div>
+</div>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="row">
+        <div class="col-md-12">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                @*@Html.LabelFor(model => model.Loja.Nome, htmlAttributes: new { @class = "control-label" })*@
+                @Html.Label("Conferente", htmlAttributes: new { @class = "control-label col-md-12" })
+                @*@Html.LabelFor(model => model.Loja.Nome, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.Label("Conferente 1", new { @class = "col-md-12", style = "font-weight: 100;" })
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                @*@Html.LabelFor(model => model.Loja.Nome, htmlAttributes: new { @class = "control-label" })*@
+                @Html.Label("Loja", htmlAttributes: new { @class = "control-label col-md-12" })
+                @*@Html.LabelFor(model => model.Loja.Nome, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.Label("Loja 1", new { @class = "col-md-12", style = "font-weight: 100;" })
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                @*@Html.LabelFor(model => model.Loja.Nome, htmlAttributes: new { @class = "control-label" })*@
+                @Html.Label("Telefone da Loja", htmlAttributes: new { @class = "control-label col-md-12" })
+                @*@Html.LabelFor(model => model.Usuario.Nome, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.Label("11 11111111", new { @class = "col-md-12", style = "font-weight: 100;" })
+
+            </div>
+        </div>
+       
+    </div>
+    <div class="row margin-bottom-10">
+        <div class="col-md-4">
+            <div class="form-group">
+                @*@Html.LabelFor(model => model.Loja.Nome, htmlAttributes: new { @class = "control-label" })*@
+                @Html.Label("Projetista", htmlAttributes: new { @class = "control-label col-md-12" })
+                @*@Html.LabelFor(model => model.Usuario.Nome, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.Label("Projetista 1", new { @class = "col-md-12", style = "font-weight: 100;" })
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                @*@Html.LabelFor(model => model.Loja.Nome, htmlAttributes: new { @class = "control-label" })*@
+                @Html.Label("Telefone do Projetista", htmlAttributes: new { @class = "control-label col-md-12" })
+                @*@Html.LabelFor(model => model.Loja.Nome, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.Label("11 11111111", new { @class = "col-md-12", style = "font-weight: 100;" })
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                @*@Html.LabelFor(model => model.Loja.Nome, htmlAttributes: new { @class = "control-label" })*@
+                @Html.Label("E-mail do Projetista", htmlAttributes: new { @class = "control-label col-md-12" })
+                @*@Html.LabelFor(model => model.Loja.Nome, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.Label("Loja 1", new { @class = "col-md-12", style = "font-weight: 100;" })
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Pesquisa
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            @Html.LabelFor(model => model.Projeto.ProjetoID, "Código do Projeto", htmlAttributes: new { @class = "control-label" })
+                            @Html.EditorFor(model => model.Projeto.ProjetoID, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Projeto.ProjetoID, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-md-4">
+                            @Html.LabelFor(model => model.Cliente.Nome, htmlAttributes: new { @class = "control-label" })
+                            @Html.EditorFor(model => model.Cliente.Nome, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Cliente.Nome, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-md-4">
+                            @Html.Label("Projetos", htmlAttributes: new { @class = "control-label" })
+                            @Html.DropDownListFor(model => model.Projeto,
+                                               new List<SelectListItem>
+                                               { new SelectListItem
+                                                 {
+                                                     Text = "Projeto 1", Value = "Projeto 1"
+                                                 },
+                                                 new SelectListItem
+                                                 {
+                                                     Text = "Projeto 2", Value = "Projeto 2"
+                                                 }
+                                               },
+                                               new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="row margin-top-10">
+                        <div class="col-md-12 text-right">
+                            <input type="submit" value="Pesquisar" class="btn btn-default btn-primary" />
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+
+        </div>
+        <!-- /.col-md-12 -->
+    </div>
+}
+
+@*<div class="row margin-bottom-10">
+        <div class="col-md-12">
+            @Html.ActionLink("Novo Projeto", "Novo", "Projeto", new { @class = "btn btn-primary" })
+        </div>
+    </div>*@
+
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+            <thead>
+                <tr>
+                    <th>Cliente</th>
+                    <th>Ambientes por Projeto</th>
+                    <th>Situação</th>
+                    <th>Prazo Máximo (dias)</th>
+                    <th>Anexos</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td>Cliente 1</td>
+                    <td>2</td>
+                    <td>Aguardando anexo da planta</td>
+                    <td class="center">1</td>
+                    <td class="center">
+                        <a id="addAnexoAmbiente" href="#">Baixar todos anexos</a>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr class="even">
+                    <td>Cliente 2</td>
+                    <td>1</td>
+                    <td>Aguardando medição</td>
+                    <td class="center">1</td>
+                    <td></td>
+                    <td class="center">
+                        <a id="verAmbientes" class="btn btn-primary">Ver Ambientes</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+@section scripts
+{
+    <script type="text/javascript">
+        $(function () {
+            $("#verAmbientes").click(function () {
+                //var id = $(this).attr("data-id");
+                $("#modal").load("Conferente/AnexarPorAmbiente", function () {
+                    $("#modal").modal();
+                })
+            });
+        });
+    </script>
+}

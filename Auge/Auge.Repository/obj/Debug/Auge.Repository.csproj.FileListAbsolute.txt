@@ -1,0 +1,32 @@
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Repository\bin\Debug\Auge.Repository.dll.config
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Repository\bin\Debug\Auge.Repository.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Repository\bin\Debug\Auge.Repository.pdb
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Repository\bin\Debug\Auge.Model.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Repository\bin\Debug\EntityFramework.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Repository\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Repository\bin\Debug\MySql.Data.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Repository\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Repository\bin\Debug\Auge.Model.pdb
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Repository\bin\Debug\EntityFramework.xml
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Repository\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Repository\obj\Debug\Auge.Repository.csprojResolveAssemblyReference.cache
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Repository\obj\Debug\Auge.Repository.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Repository\obj\Debug\Auge.Repository.pdb
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Repository\obj\Debug\Auge.Repository.Migrations.droplojacolumn.resources
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.Repository\obj\Debug\Auge.Repository.csproj.GenerateResource.Cache
+D:\Projetos\Asp Net\Auge\Auge\Auge.Repository\bin\Debug\Auge.Repository.dll.config
+D:\Projetos\Asp Net\Auge\Auge\Auge.Repository\bin\Debug\Auge.Repository.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.Repository\bin\Debug\Auge.Repository.pdb
+D:\Projetos\Asp Net\Auge\Auge\Auge.Repository\bin\Debug\Auge.Model.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.Repository\bin\Debug\EntityFramework.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.Repository\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.Repository\bin\Debug\MySql.Data.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.Repository\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.Repository\bin\Debug\Auge.Model.pdb
+D:\Projetos\Asp Net\Auge\Auge\Auge.Repository\bin\Debug\EntityFramework.xml
+D:\Projetos\Asp Net\Auge\Auge\Auge.Repository\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projetos\Asp Net\Auge\Auge\Auge.Repository\obj\Debug\Auge.Repository.csprojResolveAssemblyReference.cache
+D:\Projetos\Asp Net\Auge\Auge\Auge.Repository\obj\Debug\Auge.Repository.Migrations.droplojacolumn.resources
+D:\Projetos\Asp Net\Auge\Auge\Auge.Repository\obj\Debug\Auge.Repository.csproj.GenerateResource.Cache
+D:\Projetos\Asp Net\Auge\Auge\Auge.Repository\obj\Debug\Auge.Repository.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.Repository\obj\Debug\Auge.Repository.pdb

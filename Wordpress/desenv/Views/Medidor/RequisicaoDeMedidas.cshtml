@@ -1,0 +1,70 @@
+﻿@model Auge.MVC.Models.RequisicaoDeMedidasVM
+
+@{
+    Layout = null;
+}
+<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        @using (Html.BeginForm("RequisicaoDeMedidas", "Projeto", FormMethod.Post, new { enctype = "multipart/form-data", id = "frm_projeto" }))
+        {
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Requisição de Medida</h4>
+            </div>
+
+            @Html.AntiForgeryToken()
+
+            <div class="modal-body">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Informações do Cliente
+                    </div>
+                    <div class="panel-body">
+                        @{
+                            Html.RenderPartial("_Cliente", Model.Cliente);
+                        }
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                @Html.LabelFor(model => model.Cliente.Endereco, htmlAttributes: new { @class = "control-label" })
+                                @Html.EditorFor(model => model.Cliente.Endereco, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Cliente.Endereco, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.panel-body -->
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Agendamento
+                    </div>
+                    <div class="panel-body">
+                        
+                        <div class="row">
+                            <div class="col-md-12">
+                                @Html.LabelFor(model => model.DataAgendamento, htmlAttributes: new { @class = "control-label" })
+                                @Html.EditorFor(model => model.DataAgendamento, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.DataAgendamento, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+                    <!-- /.panel-body -->
+                </div>
+
+                @{
+                    Html.RenderPartial("_Calendario");
+                }
+
+            </div>
+            <div class="modal-footer">
+                <input type="button" value="Salvar na Agenda" class="btn btn-default" />                
+                <input type="button" value="Cancelar" class="btn btn-default" data-dismiss="modal" />
+            </div>
+        }
+    </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+
+<script src="~/Scripts/calendario.js"></script>

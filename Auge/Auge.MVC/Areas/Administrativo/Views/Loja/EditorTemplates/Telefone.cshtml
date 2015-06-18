@@ -1,0 +1,22 @@
+﻿@model Auge.MVC.Areas.Administrativo.Models.TelefoneVM
+
+@{ var context = String.IsNullOrEmpty(ViewBag.context) ? "telefone" : ViewBag.context; }
+
+<div class="col-md-4 @context">
+    <div class="form-group">
+        @Html.EditorFor(model => model.TelefoneId, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.EditorFor(model => model.PessoaId, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.HiddenFor(model => model.Remover, new { @class = "mark-for-delete" })
+
+        @*@{string label = "Telefone " + Convert.ToString(ViewBag.index + 1);}*@
+
+        @Html.LabelFor(model => model.Numero, "Telefone", htmlAttributes: new { @class = "control-label" })
+        @Html.EditorFor(model => model.Numero, new { htmlAttributes = new { @class = "form-control" } })
+        
+        @{ string container = "div." + context; }
+
+        @Html.RemoveLink("Remove", container, "input.mark-for-delete")
+
+        @Html.ValidationMessageFor(model => model.Numero, "", new { @class = "text-danger" })
+    </div>
+</div>

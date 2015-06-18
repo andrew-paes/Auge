@@ -1,0 +1,50 @@
+﻿@model Auge.Model.Entities.Telefone
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Telefone</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Pessoa.Nome)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Pessoa.Nome)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.TelefoneId)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TelefoneId)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Numero)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Numero)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

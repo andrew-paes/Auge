@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{83A04948-A4AF-4FEA-BE9C-791973C403E8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Auge.Model</RootNamespace>
+    <AssemblyName>Auge.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Common\Entity.cs" />
+    <Compile Include="Common\IEntity.cs" />
+    <Compile Include="Entities\Pessoa.cs" />
+    <Compile Include="Entities\PessoaFisica.cs" />
+    <Compile Include="Entities\PessoaJuridica.cs" />
+    <Compile Include="Entities\Ambiente.cs" />
+    <Compile Include="Entities\AmbientePergunta.cs" />
+    <Compile Include="Entities\Cliente.cs" />
+    <Compile Include="Entities\Etapa.cs" />
+    <Compile Include="Entities\FluxoEtapa.cs" />
+    <Compile Include="Entities\GrupoUsuario.cs" />
+    <Compile Include="Entities\HistoricoProjeto.cs" />
+    <Compile Include="Entities\Loja.cs" />
+    <Compile Include="Entities\Pergunta.cs" />
+    <Compile Include="Entities\PessoaLojaResponsavel.cs" />
+    <Compile Include="Entities\Projeto.cs" />
+    <Compile Include="Entities\ProjetoAmbiente.cs" />
+    <Compile Include="Entities\ProjetoAmbienteAnexo.cs" />
+    <Compile Include="Entities\ProjetoPerguntaResposta.cs" />
+    <Compile Include="Entities\RespostaPergunta.cs" />
+    <Compile Include="Entities\Endereco.cs" />
+    <Compile Include="Entities\TipoResposta.cs" />
+    <Compile Include="Entities\Usuario.cs" />
+    <Compile Include="Entities\UsuarioGrupo.cs" />
+    <Compile Include="Entities\UsuarioLoja.cs" />
+    <Compile Include="Entities\Telefone.cs" />
+    <Compile Include="Interfaces\Repositories\IGenericRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IPessoaRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ILojaRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ITelefoneRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IUnitOfWork.cs" />
+    <Compile Include="Interfaces\Services\IEntityService.cs" />
+    <Compile Include="Interfaces\Services\IPessoaService.cs" />
+    <Compile Include="Interfaces\Services\IService.cs" />
+    <Compile Include="Interfaces\Services\ILojaService.cs" />
+    <Compile Include="Interfaces\Services\ITelefoneService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

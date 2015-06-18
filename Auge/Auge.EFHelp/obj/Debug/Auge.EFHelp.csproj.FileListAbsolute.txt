@@ -1,0 +1,12 @@
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.EFHelp\bin\Debug\Auge.EFHelp.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.EFHelp\bin\Debug\Auge.EFHelp.pdb
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.EFHelp\obj\Debug\Auge.EFHelp.csprojResolveAssemblyReference.cache
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.EFHelp\obj\Debug\Auge.EFHelp.dll
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.EFHelp\obj\Debug\Auge.EFHelp.pdb
+D:\Projetos\Auge\branches\cadastros_basicos\Auge.EFHelp\bin\Debug\Auge.EFHelp.dll.config
+D:\Projetos\Asp Net\Auge\Auge\Auge.EFHelp\bin\Debug\Auge.EFHelp.dll.config
+D:\Projetos\Asp Net\Auge\Auge\Auge.EFHelp\bin\Debug\Auge.EFHelp.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.EFHelp\bin\Debug\Auge.EFHelp.pdb
+D:\Projetos\Asp Net\Auge\Auge\Auge.EFHelp\obj\Debug\Auge.EFHelp.csprojResolveAssemblyReference.cache
+D:\Projetos\Asp Net\Auge\Auge\Auge.EFHelp\obj\Debug\Auge.EFHelp.dll
+D:\Projetos\Asp Net\Auge\Auge\Auge.EFHelp\obj\Debug\Auge.EFHelp.pdb

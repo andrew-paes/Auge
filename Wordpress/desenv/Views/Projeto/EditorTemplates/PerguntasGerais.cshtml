@@ -1,0 +1,26 @@
+﻿@model IList<Auge.MVC.Models.PerguntaVM>
+
+<div class="row">
+
+    @for (int i = 1; i <= 6; i++)
+    {
+        <div class="col-md-4">
+            <div class="form-group">
+                @*@Html.LabelFor(model => model[i].Pergunta, htmlAttributes: new { @class = "control-label" })*@
+                @Html.Label("Pergunta " + i.ToString(), htmlAttributes: new { @class = "control-label" })
+                @Html.DropDownListFor(model => model[i].Respostas, 
+                                               new List<SelectListItem> 
+                                               { new SelectListItem 
+                                                 {
+                                                     Text = "Valor " + i.ToString(), Value = "Valor " + i.ToString()
+                                                 }
+                                               }, 
+                                               new { @class = "form-control" })
+                @*@Html.EditorFor(model => Model[i].Respostas, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.ValidationMessageFor(model => model[i].Respostas, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+    }
+
+</div>

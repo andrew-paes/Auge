@@ -1,0 +1,63 @@
+﻿@model Auge.MVC.Models.AnexarPorAmbienteVM
+
+@{
+    Layout = null;
+}
+
+<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        @using (Html.BeginForm("AnexarPorAmbiente", "Projeto", FormMethod.Post, new { enctype = "multipart/form-data", id = "frm_projeto" }))
+        {
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Anexar a planta com medida confirmada</h4>
+            </div>
+
+            @Html.AntiForgeryToken()
+
+            <div class="modal-body">                
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                            <thead>
+                                <tr>
+                                    <th>Ambiente</th>
+                                    <th>Apelido</th>
+                                    <th>Situação</th>
+                                    <th>Anexo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @for (int i = 1; i <= 5; i++)
+                                {
+                                    <tr class="@(i % 2 == 0 ? "odd" : "even") ">
+                                        @*gradeX*@
+                                        <td>Ambiente @i.ToString()</td>
+                                        <td>Apelido @i.ToString()</td>
+                                        <td>@(i % 2 == 0 ? "Completo" : "Incompleto")</td>
+                                        <td class="center">
+                                            @if (i % 2 == 0)
+                                            {
+                                                <p>Ok</p>
+                                            }
+                                            else
+                                            {
+                                                @*@Html.TextBoxFor(model => model.Ambientes[i].Anexo, new { type = "file", accept = "image/*" })*@
+                                                @Html.TextBox("Anexo", null, new { type = "file", accept = "image/*" })
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">                
+                <input type="button" value="Enviar projeto para Conferência" class="btn btn-default btn-info" />
+                <input type="button" value="Cancelar" class="btn btn-default" data-dismiss="modal" />
+            </div>
+        }
+    </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->

@@ -1,0 +1,35 @@
+﻿@model Auge.MVC.Models.ClienteVM
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-group">
+            @Html.LabelFor(model => model.Nome, htmlAttributes: new { @class = "control-label" })
+            @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Nome, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label" })
+            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+
+    @for (int i = 1; i <= 3; i++)
+    {
+        <div class="col-md-4">
+            <div class="form-group">
+                @Html.LabelFor(model => model.Telefones[i].Numero, "Telefone " + i.ToString(), htmlAttributes: new { @class = "control-label" })
+                @Html.EditorFor(model => model.Telefones[i].Numero, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Telefones[i].Numero, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+    }
+
+</div>

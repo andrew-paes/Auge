@@ -1,0 +1,210 @@
+﻿@model Auge.MVC.Areas.Administrativo.Models.LojaVM
+@using Auge.MVC.Models
+
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="page-header">Nova Loja</h1>
+    </div>
+</div>
+
+@using (Html.BeginForm("Novo", "Loja", FormMethod.Post, new { id = "frmNovaLoja" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Dados Gerais
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Nome, htmlAttributes: new { @class = "control-label" })
+                        @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Nome, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Cnpj, htmlAttributes: new { @class = "control-label" })
+                        @Html.EditorFor(model => model.Cnpj, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Cnpj, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Telefones
+                </div>
+                <div class="panel-body">
+
+                    <div class="row margin-bottom-10">
+                        <div class="col-md-12">
+                            @Html.AddLink("Adicionar", "#lojaTelefones", ".telefone", "Telefones", typeof(Auge.MVC.Areas.Administrativo.Models.TelefoneVM), "Telefone")
+                        </div>
+                    </div>
+
+                    <div id="lojaTelefones" class="row">
+
+                        @for (int i = 0; i < Model.Telefones.Count; i++)
+                        {
+                            @Html.EditorFor(model => model.Telefones[i], "Telefone")
+                            @*@Html.EditorFor(model => model.Telefones[i], "Telefone", new { TelefoneContext = new { DivClassNameContext = "telefone", DivContainer = "telefone" } })*@
+                        }
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Endereços
+                </div>
+                <div class="panel-body">
+
+                    <div class="row margin-bottom-10">
+                        <div class="col-md-12">
+                            @Html.AddLink("Adicionar", "#lojaEnderecos", ".endereco", "Enderecos", typeof(Auge.MVC.Areas.Administrativo.Models.EnderecoVM), "Endereco")
+                        </div>
+                    </div>
+
+                    <div id="lojaEnderecos">
+
+                        @for (int i = 0; i < Model.Enderecos.Count; i++)
+                        {
+                            @Html.EditorFor(model => model.Enderecos[i], "Endereco", new { index = i })
+                        }
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Gerentes/Responsáveis
+        </div>
+        <div class="panel-body">
+            <div class="row margin-bottom-10">
+                <div class="col-md-12">
+                    @*<a id="btnNovoResponsavel" class="btn btn-info">Novo</a>*@
+                    @*@Html.ActionLink("Novo",  "NovoResponsavel", null, new { id = "btnNovoResponsavel", @class = "btn btn-default btn-info" })*@
+                    @Html.AddLink("Adicionar", "#responsaveisLoja", ".responsavel", "PessoaLojaResponsaveis", typeof(Auge.MVC.Areas.Administrativo.Models.PessoaLojaResponsavelVM), "ResponsavelLoja")
+                </div>
+            </div>
+            <div id="responsaveisLoja">
+
+                @for (int i = 0; i < Model.PessoaLojaResponsaveis.Count; i++)
+                {
+                    @Html.EditorFor(model => model.PessoaLojaResponsaveis[i], "ResponsavelLoja", new { index = i })
+                }
+
+            </div>
+            @* <div class="row">
+                           <div class="col-md-12">
+                        @Html.AddLink("Adicionar", "#lojaTelefones", ".telefone", "Telefones", typeof(Auge.MVC.Areas.Administrativo.Models.TelefoneVM), "Telefone")
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="divResponsaveis" class="col-md-12">
+                        @Html.EditorFor(p => p.PessoaLojaResponsaveis, "PessoaLojaResponsaveis")
+                    </div>
+                </div>*@
+
+        </div>
+        <!-- /.panel-body -->
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Dados específicos
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.DiasConfirmacaoMedidasConclusaoMontagem, htmlAttributes: new { @class = "control-label" })
+                        @Html.EditorFor(model => model.DiasConfirmacaoMedidasConclusaoMontagem, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.DiasConfirmacaoMedidasConclusaoMontagem, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.DiasConfirmacaoMedidas, htmlAttributes: new { @class = "control-label" })
+                        @Html.EditorFor(model => model.DiasConfirmacaoMedidas, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.DiasConfirmacaoMedidas, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.DiasConferenciaProjeto, htmlAttributes: new { @class = "control-label" })
+                        @Html.EditorFor(model => model.DiasConferenciaProjeto, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.DiasConferenciaProjeto, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.EmailNotificacoes, htmlAttributes: new { @class = "control-label" })
+                        @Html.EditorFor(model => model.EmailNotificacoes, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.EmailNotificacoes, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.PorcentagemFaturamento, htmlAttributes: new { @class = "control-label" })
+                        @Html.EditorFor(model => model.PorcentagemFaturamento, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.PorcentagemFaturamento, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.panel-body -->
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            @Html.ActionLink("Voltar para listagem", "Index", null, new { @class = "btn btn-default" })
+        </div>
+        <div class="col-md-6">
+            <input type="submit" value="Salvar" class="btn btn-default btn-info" />
+        </div>
+    </div>
+}
+
+<div>
+
+</div>
+
+@section scripts
+{
+    <script>
+        $(function () {
+
+            $('.grid').DataTable({
+                searching: false,
+                @*language: {
+                    url: '@Url.Content("~/ThirdParty/datatables-plugins/i18n/Portuguese-Brasil.lang")'
+                }*@
+            });
+
+            $("#btnNovoResponsavel").click(function () {
+                //var id = $(this).attr("data-id");
+                $("#modal").load("CadastroGerente", function () {
+                    $("#modal").modal();
+                })
+            });
+        });
+    </script>
+}

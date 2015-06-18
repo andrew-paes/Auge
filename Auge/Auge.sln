@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auge.Model", "Auge.Model\Auge.Model.csproj", "{83A04948-A4AF-4FEA-BE9C-791973C403E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auge.Repository", "Auge.Repository\Auge.Repository.csproj", "{BD00BE25-73FD-4AA6-8BDE-8E02EBB889DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auge.Service", "Auge.Service\Auge.Service.csproj", "{6A644B40-3D88-45B0-8937-F45EBAD5E381}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auge.MVC", "Auge.MVC\Auge.MVC.csproj", "{0114B7E6-8DD4-462F-8D14-0D64E161033D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auge.IoC", "Auge.IoC\Auge.IoC.csproj", "{52D663A4-2BBE-48D4-B66E-1AED30FF2CE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auge.Tests", "Auge.Tests\Auge.Tests.csproj", "{C08FD60A-0284-483E-974F-D22B0033BED1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auge.EFHelp", "Auge.EFHelp\Auge.EFHelp.csproj", "{B633B1A0-0EEA-4277-B5B6-28AA039319D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83A04948-A4AF-4FEA-BE9C-791973C403E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83A04948-A4AF-4FEA-BE9C-791973C403E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83A04948-A4AF-4FEA-BE9C-791973C403E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83A04948-A4AF-4FEA-BE9C-791973C403E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD00BE25-73FD-4AA6-8BDE-8E02EBB889DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD00BE25-73FD-4AA6-8BDE-8E02EBB889DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD00BE25-73FD-4AA6-8BDE-8E02EBB889DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD00BE25-73FD-4AA6-8BDE-8E02EBB889DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A644B40-3D88-45B0-8937-F45EBAD5E381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A644B40-3D88-45B0-8937-F45EBAD5E381}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A644B40-3D88-45B0-8937-F45EBAD5E381}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A644B40-3D88-45B0-8937-F45EBAD5E381}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0114B7E6-8DD4-462F-8D14-0D64E161033D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0114B7E6-8DD4-462F-8D14-0D64E161033D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0114B7E6-8DD4-462F-8D14-0D64E161033D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0114B7E6-8DD4-462F-8D14-0D64E161033D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52D663A4-2BBE-48D4-B66E-1AED30FF2CE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52D663A4-2BBE-48D4-B66E-1AED30FF2CE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52D663A4-2BBE-48D4-B66E-1AED30FF2CE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52D663A4-2BBE-48D4-B66E-1AED30FF2CE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C08FD60A-0284-483E-974F-D22B0033BED1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C08FD60A-0284-483E-974F-D22B0033BED1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C08FD60A-0284-483E-974F-D22B0033BED1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C08FD60A-0284-483E-974F-D22B0033BED1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B633B1A0-0EEA-4277-B5B6-28AA039319D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B633B1A0-0EEA-4277-B5B6-28AA039319D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B633B1A0-0EEA-4277-B5B6-28AA039319D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B633B1A0-0EEA-4277-B5B6-28AA039319D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
